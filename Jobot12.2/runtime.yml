@@ -1,0 +1,113 @@
+!!org.myrobotlab.service.config.RuntimeConfig
+enableCli: true
+id: null
+listeners:
+- callback: registered
+  listener: intro
+  method: registered
+- callback: onConfigList
+  listener: i01
+  method: publishConfigList
+- callback: onConfigList
+  listener: i01
+  method: publishConfigList
+- callback: onFinishedConfig
+  listener: i01
+  method: publishFinishedConfig
+- callback: onFinishedConfig
+  listener: i01
+  method: publishFinishedConfig
+- callback: released
+  listener: intro
+  method: released
+- callback: onShutdown
+  listener: python
+  method: shutdown
+- callback: onShutdown
+  listener: i01
+  method: shutdown
+- callback: onShutdown
+  listener: python
+  method: shutdown
+- callback: onShutdown
+  listener: i01
+  method: shutdown
+locale: null
+logLevel: info
+peers: null
+registry:
+- runtime
+- security
+- webgui
+- intro
+- python
+- i01.audioPlayer
+- log
+- i01.fsm
+- i01
+- i01.leftArm.bicep
+- i01.leftArm.omoplate
+- i01.leftArm.rotate
+- i01.leftArm.shoulder
+- i01.leftArm
+- i01.rightArm.bicep
+- i01.rightArm.omoplate
+- i01.rightArm.rotate
+- i01.rightArm.shoulder
+- i01.rightArm
+- i01.rightArm.nano.serial
+- i01.rightArm.nano
+- i01.leftArm.nano.serial
+- i01.leftArm.nano
+- i01.rightArm.pca
+- i01.leftArm.pca
+- i01.leftHand.index
+- i01.leftHand.majeure
+- i01.leftHand.pinky
+- i01.leftHand.ringFinger
+- i01.leftHand.thumb
+- i01.leftHand.wrist
+- i01.leftHand
+- i01.rightHand.index
+- i01.rightHand.majeure
+- i01.rightHand.pinky
+- i01.rightHand.ringFinger
+- i01.rightHand.thumb
+- i01.rightHand.wrist
+- i01.rightHand
+- py4j
+- i01.head.eyeX
+- i01.head.eyeY
+- i01.head.jaw
+- i01.head.neck
+- i01.head.rollNeck
+- i01.head.rothead
+- i01.head
+- i01.head.ard.serial
+- i01.head.ard
+- i01.head.pca
+- servomxr
+- i01.ear
+- i01.mouth.audioFile
+- i01.mouth
+- i01.chatBot.search
+- i01.chatBot
+- i01.htmlFilter
+- i01.mouthControl
+- i01.opencv
+- i01.torso.lowStom
+- i01.torso.midStom
+- i01.torso.topStom
+- i01.torso
+- i01.torso.nano.serial
+- i01.torso.nano
+- i01.torso.pca
+- i01.left.serial
+- i01.left
+- i01.pid
+- i01.headTracking
+- i01.eyeTracking
+- i01.simulator
+- trackingTimer
+type: Runtime
+virtual: false

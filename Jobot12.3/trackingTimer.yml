@@ -1,0 +1,9 @@
+!!org.myrobotlab.service.config.ClockConfig
+interval: 10000
+listeners:
+- callback: trackingTimerRoutine
+  listener: python
+  method: pulse
+peers: null
+running: false
+type: Clock

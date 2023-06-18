@@ -1,0 +1,10 @@
+!!org.myrobotlab.service.config.ArduinoConfig
+connect: true
+listeners: null
+peers:
+  serial:
+    autoStart: true
+    name: i01.torso.nano.serial
+    type: Serial
+port: COM10
+type: Arduino

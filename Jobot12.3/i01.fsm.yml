@@ -1,0 +1,29 @@
+!!org.myrobotlab.service.config.FiniteStateMachineConfig
+current: boot
+listeners: null
+messageListeners: [
+  ]
+peers: null
+transitions:
+- event: configStarted
+  from: boot
+  to: applyingConfig
+- event: getUserInfo
+  from: applyingConfig
+  to: getUserInfo
+- event: systemCheck
+  from: applyingConfig
+  to: systemCheck
+- event: wake
+  from: applyingConfig
+  to: awake
+- event: systemCheck
+  from: getUserInfo
+  to: systemCheck
+- event: systemCheckFinished
+  from: systemCheck
+  to: awake
+- event: sleep
+  from: awake
+  to: sleeping
+type: FiniteStateMachine

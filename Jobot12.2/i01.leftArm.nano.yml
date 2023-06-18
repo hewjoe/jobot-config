@@ -1,0 +1,10 @@
+!!org.myrobotlab.service.config.ArduinoConfig
+connect: true
+listeners: null
+peers:
+  serial:
+    autoStart: true
+    name: i01.leftArm.nano.serial
+    type: Serial
+port: COM12
+type: Arduino

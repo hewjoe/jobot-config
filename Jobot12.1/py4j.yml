@@ -1,0 +1,5 @@
+!!org.myrobotlab.service.config.Py4jConfig
+listeners: null
+peers: null
+scriptRootDir: C:\Development\mrl\myrobotlab-1.1.1118\data\Py4j\py4j
+type: Py4j
