@@ -26,9 +26,9 @@ peers:
     name: i01.mouth.audioFile
     type: AudioFile
 speechRecognizers:
-- i01.ear
-- i01.mouthControl
-- python
+- i01.ear@right-tron
+- i01.mouthControl@right-tron
+- python@right-tron
 substitutions: null
 type: MarySpeech
 voice: Obadiah

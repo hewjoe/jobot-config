@@ -4,7 +4,7 @@ listeners: null
 peers:
   serial:
     autoStart: true
-    name: i01.torso.nano.serial
+    name: i01.head.ard.serial
     type: Serial
 port: null
 type: Arduino

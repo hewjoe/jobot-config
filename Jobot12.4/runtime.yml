@@ -2,30 +2,21 @@
 enableCli: true
 id: null
 listeners:
+- callback: onStartConfig
+  listener: i01
+  method: publishStartConfig
 - callback: registered
   listener: intro
   method: registered
 - callback: onConfigList
   listener: i01
   method: publishConfigList
-- callback: onConfigList
-  listener: i01
-  method: publishConfigList
-- callback: onFinishedConfig
-  listener: i01
-  method: publishFinishedConfig
 - callback: onFinishedConfig
   listener: i01
   method: publishFinishedConfig
 - callback: released
   listener: intro
   method: released
-- callback: onShutdown
-  listener: python
-  method: shutdown
-- callback: onShutdown
-  listener: i01
-  method: shutdown
 - callback: onShutdown
   listener: python
   method: shutdown
@@ -107,5 +98,7 @@ registry:
 - trackingTimer
 - i01.left.serial
 - i01.left
+- i01.simulator
+resource: resource
 type: Runtime
 virtual: false

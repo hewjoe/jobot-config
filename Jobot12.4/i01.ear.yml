@@ -9,9 +9,9 @@ listeners:
   method: recognized
 listening: false
 peers: null
-recording: true
+recording: false
 textListeners:
-- i01.chatBot
+- i01.chatBot@right-tron
 type: WebkitSpeechRecognition
 wakeWord: wake up
 wakeWordIdleTimeoutSeconds: 5000

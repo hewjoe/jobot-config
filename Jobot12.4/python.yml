@@ -2,10 +2,8 @@
 listeners: null
 modulePaths:
 - resource/Python/modules
-- resource/Python/modules
-- resource/Python/modules
 peers: null
-scriptRootDir: /home/hewjoe/robot/mrl/myrobotlab-1.1.1127/data/Python/python
+scriptRootDir: /home/hewjoe/robot/mrl/myrobotlab-1.1.1168/data/Python/python
 startScripts: [
   ]
 stopScripts: [
