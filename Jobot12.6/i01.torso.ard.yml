@@ -1,0 +1,10 @@
+!!org.myrobotlab.service.config.ArduinoConfig
+connect: true
+listeners: null
+peers:
+  serial:
+    autoStart: true
+    name: i01.torso.ard.serial
+    type: Serial
+port: /dev/ttyACM0
+type: Arduino

@@ -1,0 +1,52 @@
+!!org.myrobotlab.service.config.MarySpeechConfig
+blocking: false
+listeners:
+- callback: onStartSpeaking
+  listener: i01.ear
+  method: publishStartSpeaking
+- callback: onStartSpeaking
+  listener: i01.mouthControl
+  method: publishStartSpeaking
+- callback: onStartSpeaking
+  listener: python
+  method: publishStartSpeaking
+- callback: onStartSpeaking
+  listener: i01.ear@right-tron
+  method: publishStartSpeaking
+- callback: onStartSpeaking
+  listener: i01.mouthControl@right-tron
+  method: publishStartSpeaking
+- callback: onStartSpeaking
+  listener: python@right-tron
+  method: publishStartSpeaking
+- callback: onEndSpeaking
+  listener: i01.ear
+  method: publishEndSpeaking
+- callback: onEndSpeaking
+  listener: i01.mouthControl
+  method: publishEndSpeaking
+- callback: onEndSpeaking
+  listener: python
+  method: publishEndSpeaking
+- callback: onEndSpeaking
+  listener: i01.ear@right-tron
+  method: publishEndSpeaking
+- callback: onEndSpeaking
+  listener: i01.mouthControl@right-tron
+  method: publishEndSpeaking
+- callback: onEndSpeaking
+  listener: python@right-tron
+  method: publishEndSpeaking
+mute: false
+peers:
+  audioFile:
+    autoStart: true
+    name: i01.mouth.audioFile
+    type: AudioFile
+speechRecognizers:
+- i01.ear@stupendous-droids
+- i01.mouthControl@stupendous-droids
+- python@stupendous-droids
+substitutions: null
+type: MarySpeech
+voice: Obadiah
